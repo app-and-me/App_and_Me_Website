@@ -29,5 +29,6 @@ app.listen(PORT, function() {
     console.log('server running in ' + PORT);
 });
 
-require('./routes/auth/auth')(app, Users, Appliers);
+require('./routes/auth/auth')(app, Users);
+require('./routes/apply/apply')(app, Appliers);
 require('./routes/index')(app);
