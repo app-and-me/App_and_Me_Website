@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-// import config from './config';
+import config from './config';
 
 let app = express();
 
@@ -47,9 +47,9 @@ import { Users, Boards, Comments } from './mongo';
 // var swaggerSpec = swaggerJSDoc(options)
 
 //서버 실행
-const PORT = process.env.PORT || 3000;
+const PORT = config.PORT;
 app.listen(PORT, function() {
-    console.log('server running');
+    console.log('server running in ' + PORT);
 });
 
 require('./routes/index')(app);
