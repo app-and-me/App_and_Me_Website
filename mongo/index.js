@@ -35,6 +35,17 @@ let UserSchema = mongoose.Schema({ //회원
     password: { type: String }, //비밀번호
 });
 
+let DevNoteSchema = mongoose.Schema({ //개발노트
+    token: { type: String }, // 토큰
+    title: { type: String }, // 제목
+    content: { type: String }, // 내용
+    date: { type: Date, default: Date.now }, //수정 날짜
+    images: [{
+        id: { type: String }, //id
+        url: { type: String } //url
+    }], //활동 사진
+});
+
 UserSchema.statics.create = function(name, email, password, interest_main) {
     const user = new this({
         name,
@@ -56,12 +67,13 @@ UserSchema.methods.verify = function(password) {
     return this.password = password
 }
 
-require('./err')(UserSchema, BoardSchema, CommentSchema);
+require('./err')(UserSchema, BoardSchema, CommentSchema, DevNoteSchema);
 
 let Users = mongoose.model("users", UserSchema);
 let Boards = mongoose.model("boards", BoardSchema);
 let Comments = mongoose.model("comments", CommentSchema);
+let DevNotes = mongoose.model("DevNotes", DevNoteSchema);
 
-export { Users, Boards, Comments };
+export { Users, Boards, Comments, DevNotes };
 
 export default db;
