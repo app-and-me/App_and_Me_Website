@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 app.set('jwt-secret', config.secret)
 
 //module setting
-import { Users, Boards, Comments, DevNotes } from './mongo';
+import { Users, Boards, Comments, DevNotes, Appliers } from './mongo';
 
 //서버 실행
 const PORT = config.PORT;

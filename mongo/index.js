@@ -35,15 +35,25 @@ let UserSchema = mongoose.Schema({ //회원
     password: { type: String }, //비밀번호
 });
 
+let ApplierSchema = mongoose.Schema({ //지원자
+    token: { type: String }, // 토큰
+    name: { type: String }, //이름
+    student_id: { type: String }, //학번
+    phone: { type: String }, //전화번호
+    brief: { type: String }, //5글자 소개
+    reason: { type: String }, //지원동기
+    todo: { type: String } //하고싶은일
+});
+
 let DevNoteSchema = mongoose.Schema({ //개발노트
     token: { type: String }, // 토큰
     title: { type: String }, // 제목
     content: { type: String }, // 내용
     date: { type: Date, default: Date.now }, //수정 날짜
     images: [{
-        id: { type: String }, //id
-        url: { type: String } //url
-    }], //활동 사진
+        id: String, //id
+        url: String //url
+    }], //사진
 });
 
 UserSchema.statics.create = function(name, email, password, interest_main) {
