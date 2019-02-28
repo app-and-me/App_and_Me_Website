@@ -17,7 +17,7 @@
         "jsonwebtoken": "^8.4.0",
         "mongoose": "*",
         "path": "*",
-        "debug": "~2.2.0",
+        "debug": "~2.6.9",
         "ejs": "^2.6.1",
         "randomstring": "^1.1.5",
         "serve-favicon": "~2.3.0"
