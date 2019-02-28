@@ -77,13 +77,14 @@ UserSchema.methods.verify = function(password) {
     return this.password = password
 }
 
-require('./err')(UserSchema, BoardSchema, CommentSchema, DevNoteSchema);
+require('./err')(UserSchema, BoardSchema, CommentSchema, ApplierSchema, DevNoteSchema);
 
 let Users = mongoose.model("users", UserSchema);
 let Boards = mongoose.model("boards", BoardSchema);
 let Comments = mongoose.model("comments", CommentSchema);
+let Appliers = mongoose.model("Appliers", ApplierSchema);
 let DevNotes = mongoose.model("DevNotes", DevNoteSchema);
 
-export { Users, Boards, Comments, DevNotes };
+export { Users, Boards, Comments, DevNotes, Appliers };
 
 export default db;
