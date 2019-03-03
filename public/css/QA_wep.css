@@ -2,6 +2,7 @@
 @import "https://fonts.google.com/specimen/Raleway?fbclid=IwAR2FisFUlxPR3gvJyhRkk598M_lIJfT83CmsqqHDtQlOXF7QDELfDKiqFaI";
 body {
     margin: 0;
+    font-family: 'Noto Sans';
 }
 
 html body {
@@ -43,13 +44,13 @@ html body {
 
 .background1 {
     max-width: 100%;
-    height: 3750px;
+    height: 1050px;
     margin-bottom: 25px;
     background-color: #f8f8f8;
 }
 
 .ABOUT {
-    width: 47px;
+    width: 62px;
     height: 15px;
     object-fit: contain;
     font-family: NotoSansCJKkr-light;
@@ -60,7 +61,7 @@ html body {
     line-height: 0.25;
     letter-spacing: -0.8px;
     text-align: left;
-    color: #ff8daf;
+    color: #231f20;
     float: right;
     line-height: 1.6em;
 }
@@ -94,7 +95,7 @@ html body {
     line-height: 0.25;
     letter-spacing: -1.2px;
     text-align: left;
-    color: #231f20;
+    color: #ff8daf;
     float: right;
     margin-right: 10%;
     line-height: 1.6em;
@@ -136,6 +137,7 @@ html body {
 
 .common {
     display: inline-table;
+    background-color: white;
     font-size: 20px;
     width: 100px;
     height: 50px;
@@ -158,9 +160,9 @@ a:hover {
     text-decoration: none;
 }
 
-.ABOUT_title {
+.QA_title {
     width: 1180px;
-    height: 42px;
+    height: 60px;
     object-fit: contain;
     font-family: NotoSansCJKkr-Bold;
     font-size: 54px;
@@ -177,7 +179,7 @@ a:hover {
 
 .intro {
     width: 1180px;
-    height: 72px;
+    height: 80px;
     object-fit: contain;
     font-family: NotoSansCJKkr-light;
     font-size: 28px;
@@ -192,74 +194,16 @@ a:hover {
     line-height: 1.6em;
 }
 
-.title {
-    width: 500px;
-    height: 42px;
-    object-fit: contain;
-    font-family: NotoSansCJKkr-Medium;
-    font-size: 45px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.71;
-    letter-spacing: -2.7px;
+.list-table thead th {
+    border-bottom: 1px solid gray;
+    background-color: #E4E4E4;
+}
+
+.list-table tbody td {
     text-align: center;
-    color: #4b4b4b;
-    line-height: 1.6em;
-}
-
-.introduce {
-    width: 1180px;
-    height: 278px;
-    object-fit: contain;
-    font-family: NotoSansCJKkr-DemiLight;
-    font-size: 26.5px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.58;
-    letter-spacing: -1.6px;
-    text-align: left;
-    color: #231f20;
-    line-height: 1.6em;
-}
-
-.club_top1 {
-    width: 595px;
-    height: 550px;
-}
-
-.jb-wrap {
-    position: relative;
-}
-
-.jb-wrap img {
-    width: 595px;
-    height: 550px;
-    vertical-align: middle;
-}
-
-.jb-text {
-    padding: 240px 265px;
-    background-color: white;
-    font-family: NotoSansCJKkr-DemiLight;
+    border-bottom: 1px solid gray;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    line-height: 1.6em;
-}
-
-.vdo {
-    margin-left: 10%;
-    float: left;
-}
-
-.img_pp {
-    float: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    height: 30px;
 }
 
 .APP_ME {
@@ -334,7 +278,12 @@ a:hover {
     margin-left: 10%;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 15px 30px;
+input {
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+textarea {
+    border-radius: 4px;
+    border: 1px solid gray;
 }

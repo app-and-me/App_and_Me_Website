@@ -44,7 +44,7 @@ html body {
 
 .background1 {
     max-width: 100%;
-    height: 1650px;
+    height: 3750px;
     margin-bottom: 25px;
     background-color: #f8f8f8;
 }
@@ -61,7 +61,7 @@ html body {
     line-height: 0.25;
     letter-spacing: -0.8px;
     text-align: left;
-    color: #231f20;
+    color: #ff8daf;
     float: right;
     line-height: 1.6em;
 }
@@ -78,7 +78,7 @@ html body {
     line-height: 0.25;
     letter-spacing: -1.2px;
     text-align: left;
-    color: #ff8daf;
+    color: #231f20;
     float: right;
     line-height: 1.6em;
 }
@@ -160,9 +160,9 @@ a:hover {
     text-decoration: none;
 }
 
-.DEV_title {
+.ABOUT_title {
     width: 1180px;
-    height: 51px;
+    height: 42px;
     object-fit: contain;
     font-family: NotoSansCJKkr-Bold;
     font-size: 54px;
@@ -173,8 +173,8 @@ a:hover {
     letter-spacing: -3.2px;
     text-align: left;
     color: #231f20;
-    line-height: 1.6em;
     margin: auto;
+    line-height: 1.6em;
 }
 
 .intro {
@@ -190,8 +190,45 @@ a:hover {
     letter-spacing: -1.7px;
     text-align: left;
     color: #231f20;
-    line-height: 1.6em;
     margin: auto;
+    line-height: 1.6em;
+}
+
+.title {
+    width: 500px;
+    height: 42px;
+    object-fit: contain;
+    font-family: NotoSansCJKkr-Medium;
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.71;
+    letter-spacing: -2.7px;
+    text-align: center;
+    color: #4b4b4b;
+    line-height: 1.6em;
+}
+
+.introduce {
+    width: 1180px;
+    height: 278px;
+    object-fit: contain;
+    font-family: NotoSansCJKkr-DemiLight;
+    font-size: 26.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: -1.6px;
+    text-align: left;
+    color: #231f20;
+    line-height: 1.6em;
+}
+
+.club_top1 {
+    width: 595px;
+    height: 550px;
 }
 
 .jb-wrap {
@@ -199,29 +236,32 @@ a:hover {
 }
 
 .jb-wrap img {
-    width: 350px;
-    height: 400px;
+    width: 595px;
+    height: 550px;
     vertical-align: middle;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
 }
 
 .jb-text {
-    padding: 20px 10px;
+    padding: 240px 265px;
     background-color: white;
-    font-family: NotoSansCJKkr-Bold;
-    font-size: 32px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.16;
-    letter-spacing: -1.9px;
-    text-align: left;
-    color: #414042;
-    margin-top: -30px;
+    font-family: NotoSansCJKkr-DemiLight;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
     line-height: 1.6em;
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
+}
+
+.vdo {
+    margin-left: 10%;
+    float: left;
+}
+
+.img_pp {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .APP_ME {

@@ -200,6 +200,40 @@ html body {
     color: #231f20;
 }
 
+.Members {
+    width: 36px;
+    height: 19px;
+    object-fit: contain;
+    font-family: NotoSansCJKkr-light;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.25;
+    letter-spacing: -1.2px;
+    text-align: left;
+    color: #231f20;
+    float: right;
+    line-height: 1.6em;
+}
+
+.Apply {
+    width: 36px;
+    height: 19px;
+    object-fit: contain;
+    font-family: NotoSansCJKkr-light;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.25;
+    letter-spacing: -1.2px;
+    text-align: left;
+    color: #231f20;
+    float: right;
+    line-height: 1.6em;
+}
+
 .QA1 {
     width: 36px;
     height: 19px;
