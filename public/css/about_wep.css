@@ -242,11 +242,19 @@ a:hover {
 }
 
 .jb-text {
-    padding: 240px 265px;
+    padding: 42px;
+    width: 492px;
+    height: 452px;
+    text-align: left;
+    object-fit: contain;
     background-color: white;
-    font-family: NotoSansCJKkr-DemiLight;
-    text-align: center;
+    font-family: NotoSansCJKkr-Regular;
+    font-size: 21px;
     position: absolute;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -1.6px;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
@@ -256,6 +264,7 @@ a:hover {
 .vdo {
     margin-left: 10%;
     float: left;
+    background-color: white;
 }
 
 .img_pp {
