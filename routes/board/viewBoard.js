@@ -1,4 +1,5 @@
 import rndstring from 'randomstring';
+import moment from 'moment';
 
 module.exports = (app, Boards, Comments) => {
     app.post('/viewBoard', async(req, res) => {
@@ -11,7 +12,8 @@ module.exports = (app, Boards, Comments) => {
         .get('/qa', (req, res) => {
             Boards.find({}).sort({ date: -1 }).exec(function(err, rawContents) { //오래된 순으로 정렬
                 if (err) throw err;
-                res.render('qa', { contents: rawContents });
+                // rawContents.date = moment(rawContents.date).format('YYYY-MM-DD');
+                res.render('qa', { contents: rawContents, moment: moment });
             });
         })
 }
