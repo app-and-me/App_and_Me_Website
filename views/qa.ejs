@@ -27,19 +27,31 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td> 2 </td>
-                        <td> 수현아 사랑해(넌 다른사람을 사랑하겠지만...) </td>
-                        <td> 이소현 </td>
-                        <td> 2019-02-26 </td>
-                    </tr>
+                    <%if(contents.length>0){%>
+                        <%var i = 0;%>
+                            <%contents.forEach(function(item){%>
+                                <%i++;%>
 
-                    <tr>
-                        <td> 1 </td>
-                        <td> 수현아 사랑해(넌 다른사람을 사랑하겠지만...) </td>
-                        <td> 이소현 </td>
-                        <td> 2019-02-26 </td>
-                    </tr>
+                                    <tr>
+                                        <td>
+                                            <%=i%>
+                                        </td>
+                                        <td>
+                                            <%=item.title%>
+                                        </td>
+                                        <td>
+                                            <%=item.name%>
+                                        </td>
+                                        <td>
+                                            <%=item.date%>
+                                        </td>
+                                    </tr>
+                                    <%})%>
+                                        <%} else {%>
+                                            <tr>
+                                                <td colspan="5">아직 등록된 동아리가 없습니다.</td>
+                                            </tr>
+                                            <%}%>
                 </tbody>
                 <tfoot>
                     <tr>

@@ -23,6 +23,7 @@ let CommentSchema = mongoose.Schema({ //
 let BoardSchema = mongoose.Schema({ //게시판
     token: { type: String }, // 토큰
     title: { type: String }, // 제목
+    name: { type: String }, // 이름
     content: { type: String }, // 내용
     date: { type: Date, default: Date.now }, //수정 날짜
     comments: [CommentSchema] //댓글
