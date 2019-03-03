@@ -328,6 +328,7 @@ a:hover {
 
 .margin {
     margin-left: 10%;
+    clear: both;
 }
 
 table {

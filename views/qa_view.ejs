@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Q&A</title>
+    <title>Q&A -
+        <%=item.title%>
+    </title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://localhost:3000/css/App.css">
     <style>
@@ -31,17 +33,25 @@
         <table width="1000px" class="list-table" align=center frame=void style='border-left:0;border-right:0;border-bottom:0;border-top:0'>
             <tr height="40px">
                 <td bgcolor=#f6f6f6>제목</td>
-                <td bgcolor=#fbfbfb size="35" style="margin-left:0%; text-align: left">앱앤미는 뭐하는 곳인가요</td>
+                <td bgcolor=#fbfbfb size="35" style="margin-left:0%; text-align: left">
+                    &nbsp;&nbsp;&nbsp;
+                    <%=item.title%>
+                </td>
             </tr>
             <tr height="40px">
                 <td bgcolor=#f6f6f6>작성자</td>
-                <td bgcolor=#fbfbfb size="35" style=" margin-left:0%; text-align: left">수현 짱</td>
+                <td bgcolor=#fbfbfb size="35" style=" margin-left:0%; text-align: left">
+                    &nbsp;&nbsp;&nbsp;
+                    <%=item.name%>
+                </td>
             </tr>
             <tr height="40px">
-                <td colspan="2"><textarea style="margin-left:0.5%; margin-top: 0.5%; margin-bottom:0.5%; margin-right:0.5%;" cols="135" rows="25"></textarea></td>
+                <td colspan="2" style=" padding:20px 35px; text-align: left; height: 500px; vertical-align: top;">
+                    <%=item.content%>
             </tr>
         </table>
         <img style="float: right; margin-right:13%; margin-top:1.5%;" src="http://localhost:3000/img/list.jpg">
+
     </section>
     <footer>
         <% include ./footer %>
