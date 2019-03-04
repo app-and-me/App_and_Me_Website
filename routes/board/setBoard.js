@@ -7,9 +7,9 @@ module.exports = (app, Boards, Comments) => {
             try {
                 var result = await board.save();
             } catch (e) {
-                if (e) res.send('<script type="text/javascript">alert("오류가 발생하였습니다."); history.back();</script>');
+                if (e) res.send('<script type="text/javascript">alert("오류가 발생하였습니다.");  history.back();</script>');
             }
-            res.send('<script type="text/javascript">alert("질문이 등록되었습니다."); history.back();</script>');
+            res.redirect(200, '/qa');
         })
         .post('/delBoard', async(req, res) => {
             let board = new Boards(req.body);
