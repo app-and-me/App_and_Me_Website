@@ -1,9 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
+import favicon from 'serve-favicon';
 import config from './config';
 
 let app = express();
+app.use(favicon(__dirname + '/public/img/favicon.ico', { maxAge: 2592000000 }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -12,6 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
