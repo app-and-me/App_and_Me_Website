@@ -40,4 +40,4 @@ package-lock.json
 uploads/*
 
 # custom
-config.js
+# config.js
