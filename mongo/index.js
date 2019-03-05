@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import config from '../config';
 
-mongoose.connect('mongodb://localhost/app_and_me_website', { useNewUrlParser: true }).then(() => {
+mongoose.connect(config.mongo_address, { useNewUrlParser: true }).then(() => {
     console.log("Connected to Database");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);

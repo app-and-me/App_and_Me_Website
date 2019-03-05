@@ -27,7 +27,7 @@ app.set('jwt-secret', config.secret)
 import { Users, Boards, Comments, DevNotes, Appliers } from './mongo';
 
 //서버 실행
-const PORT = config.PORT;
+const PORT = config.PORT || 3000;
 app.listen(PORT, function() {
     console.log('server running in ' + PORT);
 });
