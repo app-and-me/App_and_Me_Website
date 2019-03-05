@@ -41,3 +41,5 @@ uploads/*
 
 # custom
 # config.js
+me.pem
+me.ppk
