@@ -23,7 +23,8 @@
         "nodemon": "^1.18.10",
         "path": "^0.12.7",
         "randomstring": "^1.1.5",
-        "serve-favicon": "^2.3.2"
+        "serve-favicon": "^2.3.2",
+        "babel-cli": "^6.26.0"
     },
     "repository": {
         "type": "git",
@@ -36,7 +37,6 @@
     },
     "homepage": "https://github.com/wisemuji/App_and_Me_Website#readme",
     "devDependencies": {
-        "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-plugin-transform-function-bind": "^6.22.0",
         "babel-plugin-transform-regenerator": "^6.26.0",
