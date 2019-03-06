@@ -16,7 +16,7 @@
         <div class="intro">앱앤미에 관심이 생긴 신입생 여러분! 망설이지 말고 여러분의 마음을 표현해주세요!<br> 혹시 떨어지는 건 아닐까 고민될 수도 있겠지만, 분명 후회하지 않을 거에요..</div><br><br><br>
         <hr width="1200px" size="1"><br><br>
         <center>
-            <form action="/apply" method="post">
+            <form action="/apply" method="post" name="apply">
                 <table class="table1">
                     <tr>
                         <td></td>
@@ -48,13 +48,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"> 지원동기를 작성해주세요(200자 이내)<br><textarea name="reason" style="width:600px; height:200px" required></textarea>
+                        <td colspan="2"> 지원동기를 작성해주세요(200자 이내)<br><textarea name="reason" onkeyup="len_chk()" style="width:600px; height:200px" required></textarea>
                             <br>
                             <hr width="700px" valign=bottom size="0.5">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"> 입부 후 하고 싶은 일을 적어주세요. (200자 내외) <br><textarea name="todo" style="width:600px; height:200px" required></textarea>
+                        <td colspan="2"> 입부 후 하고 싶은 일을 적어주세요. (200자 내외) <br><textarea name="todo" onkeyup="len_chk()" style="width:600px; height:200px" required></textarea>
                             <br>
                             <hr width="700px" valign=bottom size="0.5">
                         </td>
@@ -69,6 +69,24 @@
     <footer>
         <% include ./footer %>
     </footer>
+    <script language="javascript">
+        //글자수 제한 체크 
+        function len_chk() {
+            var frm = document.apply.reason;
+            var frm2 = document.apply.todo;
+
+            if (frm.value.length > 400) {
+                alert("글자수는 200자로 제한됩니다.");
+                frm.value = frm.value.substring(0, 400);
+                frm.focus();
+            } else if (frm2.value.length > 400) {
+                alert("글자수는 200자로 제한됩니다.");
+                frm2.value = frm2.value.substring(0, 400);
+                frm2.focus();
+            }
+
+        }
+    </script>
 </body>
 
 </html>
