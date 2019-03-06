@@ -17,7 +17,7 @@ module.exports = (app, Boards, Comments) => {
             // Boards.find({}, { token: { $slice: [(page - 1) * 10, page * 10] } }).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
             Boards.find().skip((page - 1) * 10).limit(10).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
                 if (err) throw err;
-                // rawContents.date = moment(rawContents.date).format('YYYY-MM-DD');
+                // rawContents.date = moment(rawContents.date).format('YYYY-MM-DDThh:mm:ss');
                 res.render('qa', { contents: rawContents, moment: moment, page: page });
             });
         })
