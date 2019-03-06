@@ -10,15 +10,16 @@ module.exports = (app, Boards, Comments) => {
             res.render('qa_view', { item: result });
 
         })
-        .get('/qa', (req, res) => {
+        .get('/qa', async(req, res) => {
             let page = req.query.page;
             if (!page) page = 1;
             console.log(page);
-            // Boards.find({}, { token: { $slice: [(page - 1) * 10, page * 10] } }).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
-            Boards.find().skip((page - 1) * 10).limit(10).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
-                if (err) throw err;
-                // rawContents.date = moment(rawContents.date).format('YYYY-MM-DDThh:mm:ss');
-                res.render('qa', { contents: rawContents, moment: moment, page: page });
+            await Boards.count({}, function(err, c) {
+                console.log('Count is ' + c);
+                Boards.find().skip((page - 1) * 10).limit(10).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
+                    if (err) throw err;
+                    res.render('qa', { contents: rawContents, moment: moment, page: page, leng: c });
+                });
             });
         })
 }
