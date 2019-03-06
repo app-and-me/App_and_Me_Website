@@ -34,7 +34,7 @@
 
                                     <tr>
                                         <td>
-                                            <%=i%>
+                                            <%=((page-1)*10)+i%>
                                         </td>
                                         <td>
                                             <a href='viewBoard/<%=item.token%>'>
@@ -57,7 +57,17 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td align="center" colspan="5">1</td>
+                        <td align="center" colspan="5"><br><br>
+                            <%for(var i = 0;i<=contents.length/10;i++){%>
+                                <a href='qa?page=<%=i+1%>'>
+                                    <%if (page==i+1){%>
+                                        <strong><%=i+1%></strong>
+                                        <%} else {%>
+                                            <%=i+1%>
+                                                <%}%>
+                                </a>
+                                <% } %>
+                        </td>
                     </tr>
                 </tfoot>
             </table>

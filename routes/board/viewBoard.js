@@ -11,10 +11,14 @@ module.exports = (app, Boards, Comments) => {
 
         })
         .get('/qa', (req, res) => {
-            Boards.find({}).sort({ date: -1 }).exec(function(err, rawContents) { //오래된 순으로 정렬
+            let page = req.query.page;
+            if (!page) page = 1;
+            console.log(page);
+            // Boards.find({}, { token: { $slice: [(page - 1) * 10, page * 10] } }).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
+            Boards.find().skip((page - 1) * 10).limit(10).sort({ date: -1 }).exec(function(err, rawContents) { //최신 순으로 정렬
                 if (err) throw err;
                 // rawContents.date = moment(rawContents.date).format('YYYY-MM-DD');
-                res.render('qa', { contents: rawContents, moment: moment });
+                res.render('qa', { contents: rawContents, moment: moment, page: page });
             });
         })
 }
