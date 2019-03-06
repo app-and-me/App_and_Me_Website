@@ -11,6 +11,6 @@ module.exports = (app, Appliers) => {
             if (e instanceof ValidationError) return res.status(400).json({ message: e.message });
             if (e instanceof paramsError) return res.status(400).json({ message: e.message });
         }
-        res.send('<script type="text/javascript">alert("신청이 완료되었습니다. 좋은 결과 있길 바래요! :)"); history.back();</script>');
+        res.send('<script type="text/javascript">alert("신청이 완료되었습니다. 좋은 결과 있길 바래요! :)"); location.href="http://appme.emirim.kr";</script>');
     })
 }

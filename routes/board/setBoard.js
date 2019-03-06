@@ -9,7 +9,7 @@ module.exports = (app, Boards, Comments) => {
             } catch (e) {
                 if (e) res.send('<script type="text/javascript">alert("오류가 발생하였습니다.");  history.back();</script>');
             }
-            res.redirect(200, '/qa');
+            res.send("<script type='text/javascript'>alert('질문이 등록되었습니다.'); location.href='http://appme.emirim.kr/qa';</script>");
         })
         .post('/delBoard', async(req, res) => {
             let board = new Boards(req.body);
