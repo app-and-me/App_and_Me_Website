@@ -262,15 +262,14 @@ a:hover {
 }
 
 .vdo {
-    margin-left: 10%;
-    float: left;
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 
 .img_pp {
-    float: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .APP_ME {
@@ -344,6 +343,10 @@ a:hover {
 .margin {
     margin-left: 10%;
     clear: both;
+}
+
+.center {
+    margin: auto;
 }
 
 table {
