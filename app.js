@@ -34,6 +34,7 @@ app.listen(PORT, function() {
 
 require('./routes/auth/auth')(app, Users);
 require('./routes/apply/apply')(app, Appliers);
+require('./routes/apply/vertify')(app, Appliers);
 require('./routes/board/setBoard')(app, Boards, Comments);
 require('./routes/board/viewBoard')(app, Boards, Comments);
 require('./routes/index')(app);
