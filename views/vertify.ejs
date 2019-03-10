@@ -17,39 +17,38 @@
         <center>
             <table>
                 <tr>
-                    <td>
-                        <div class="jb-wrap">
-                            <div class="title">
-                                <div class="name">3611&nbsp;이소현</div>
-                                <div class="phone">010-1234-1234</div>
-                                <div class="five">앱앤미체고</div>
-                                <div class="pr">냥냐리냥ㄴ야</div>
-                                <div class="reason">왜냐면 냥냐리냥냥</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="jb-wrap">
-                            <div class="title">
-                                <div class="name">3611&nbsp;이소현</div>
-                                <div class="phone">010-1234-1234</div>
-                                <div class="five">앱앤미체고</div>
-                                <div class="pr">냥냐리냥ㄴ야</div>
-                                <div class="reason">왜냐면 냥냐리냥냥</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="jb-wrap">
-                            <div class="title">
-                                <div class="name">3611&nbsp;이소현</div>
-                                <div class="phone">010-1234-1234</div>
-                                <div class="five">앱앤미체고</div>
-                                <div class="pr">냥냐리냥ㄴ야</div>
-                                <div class="reason">왜냐면 냥냐리냥냥</div>
-                            </div>
-                        </div>
-                    </td>
+                    <%if(appliers.length>0){%>
+                        <%var i = 0;%>
+                            <%appliers.forEach(function(element){%>
+                                <td>
+                                    <div class="jb-wrap">
+                                        <div class="title">
+                                            <div class="name">
+                                                <%=element.student_id%>&nbsp;
+                                                    <%=element.name%>
+                                            </div>
+                                            <div class="phone">
+                                                <%=element.phone%>
+                                            </div>
+                                            <div class="five">
+                                                <%=element.brief%>
+                                            </div>
+                                            <div class="pr">
+                                                <%=element.reason%>
+                                            </div>
+                                            <div class="reason">
+                                                <%=element.todo%>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <%i++;%>
+                                    <%})%>
+                                        <%} else {%>
+                                            <tr>
+                                                <td colspan="5">아직 신청자가 없습니다.</td>
+                                            </tr>
+                                            <%}%>
                 </tr>
             </table>
         </center>
