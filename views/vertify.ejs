@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>개발일지</title>
-    <link rel="stylesheet" type="text/css" href="http://appme.emirim.kr/css/new_confirm.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:9000/css/new_confirm.css">
 </head>
 
 <body>
@@ -43,12 +43,16 @@
                                     </div>
                                 </td>
                                 <%i++;%>
-                                    <%})%>
-                                        <%} else {%>
-                                            <tr>
-                                                <td colspan="5">아직 신청자가 없습니다.</td>
-                                            </tr>
-                                            <%}%>
+                                    <%if(i%3==0&&i!=0){%>
+                </tr>
+                <tr>
+                    <%}%>
+                        <%})%>
+                            <%} else {%>
+                                <tr>
+                                    <td colspan="5">아직 신청자가 없습니다.</td>
+                                </tr>
+                                <%}%>
                 </tr>
             </table>
         </center>
