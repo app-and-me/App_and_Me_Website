@@ -40,6 +40,6 @@ package-lock.json
 uploads/*
 
 # custom
-# config.js
+config.js
 me.pem
 me.ppk
