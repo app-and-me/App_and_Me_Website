@@ -1,2 +1,57 @@
-# App_and_Me Website 
-### 앱앤미 동아리 홍보 및 지원이 가능한 웹사이트입니다.
+# 앱앤미 웹사이트
+
+미림여자정보과학고등학교의 전공동아리 앱앤미(AppandMe) 홍보 및 지원 사이트입니다. (2019.03 ~ 운영중)
+
+## Website
+
+http://appme.emirim.kr/
+
+## Features
+
+* About
+    * 앱앤미 동아리의 간단한 소개를 제공합니다.
+* 부원소개
+    * 6, 7기 부원들의 소개와 사진을 보여줍니다.
+* 지원하기
+    * 앱앤미에 지원하려는 신입생들의 온라인 신청을 받고 있습니다(현재 마감). 
+* 개발일지
+    * 웹사이트 개발 과정을 간단히 보여줍니다.
+* Q&A
+    * 동아리에 궁금한 점을 마음껏 물어볼 수 있습니다.
+
+## 실행 화면
+
+
+## Development setup
+
+* you need to create `config.js` file.
+
+```sh
+npm install
+npm start
+```
+
+## Built With
+
+* [AWS](https://aws.amazon.com/ko/) - Server Hosting
+* [Node.js/Express framework](https://expressjs.com/ko/) - Back-end Development
+* HTML/CSS/JavaScript - Front-end Development
+* [MongoDB](https://www.mongodb.com/) - Database
+* [mlab](https://mlab.com/) - MongoDB Hosting
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+## Authors
+
+* **Suhyeon Kim** - *PM, Full-stack Development* - [wisemuji](https://github.com/wisemuji)
+* **Sohyeon Lee** - *Front-end Development* - [leesohyeon](https://github.com/leesohyeon)
+* **Hyogyeong Kim** - *Front-end Development* - [ITHYO](https://github.com/ITHYO)
+
+See also the list of [contributors](https://github.com/orgs/app-and-me/people) who participated in this project.
+
