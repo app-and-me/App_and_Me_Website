@@ -21,6 +21,24 @@ http://appme.emirim.kr/
 
 ## 실행 화면
 
+> ![메인화면](https://user-images.githubusercontent.com/32327475/57664695-3620b180-7634-11e9-86f7-d76ebe95d1e3.png)
+**메인화면**
+
+> ![About](https://user-images.githubusercontent.com/32327475/57664707-40db4680-7634-11e9-877e-e25eec997b6d.png)
+**About**
+
+> ![부원소개](https://user-images.githubusercontent.com/32327475/57664728-56507080-7634-11e9-85bd-0cc3faf8149b.png)
+**부원소개**
+
+> ![지원현황](https://user-images.githubusercontent.com/32327475/57664752-68321380-7634-11e9-98c3-65c1276cb555.png)
+**지원현황**
+
+> ![개발일지](https://user-images.githubusercontent.com/32327475/57664781-77b15c80-7634-11e9-86b6-069aba9822f8.png)
+**개발일지**
+
+> ![Q&A](https://user-images.githubusercontent.com/32327475/57664798-81d35b00-7634-11e9-8c1f-b4367093feec.png)
+**Q&A**
+
 
 ## Development setup
 
