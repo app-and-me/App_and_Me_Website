@@ -5,6 +5,7 @@
 ## Website
 
 http://appme.emirim.kr/
+* AWS 과금 문제로 현재는 접속이 불가합니다.
 
 ## Features
 
